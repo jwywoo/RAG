@@ -15,5 +15,5 @@ RAG/
 
 ## Directories Links
 
-- [MVP RAG](https://github.com/jwywoo/RAG/tree/main/rag-practice/rag-mvp)
+- [MVP RAG]()
 - [MVP RAG + DB]()
