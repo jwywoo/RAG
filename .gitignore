@@ -3,7 +3,9 @@
 
 ### dotenv ###
 .env
-
+### virtual env##
+.rag_api_venv
+.*_venv
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
