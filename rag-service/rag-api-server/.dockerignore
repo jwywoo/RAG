@@ -1,0 +1,4 @@
+*.pyc
+.git
+.rag_api_venv
+__pycache__
