@@ -25,7 +25,7 @@ def dating_generation(request):
     ### for local test: index_path="combined_faiss_index"
     print("Vector Store")
     vector_store = load_vector_store(
-        index_dir_name="combined_faiss_index",
+        index_dir_name="app/combined_faiss_index",
         embeddings=embeddings
     )
     
