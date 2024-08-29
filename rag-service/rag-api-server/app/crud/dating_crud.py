@@ -12,10 +12,10 @@ from ..schema.response_dto.dating_generation_response_dto import DatingGenRespon
 from ..core.config import settings
 
 import os
-
+import time
 def dating_generation(request):
+    start_time = time.time()
     # Load Vector Store
-    
     ## Embedding: OpenAI
     print("embeddings")
     embeddings = load_embeddings(
@@ -46,6 +46,9 @@ def dating_generation(request):
     # Generate result
     generated_result = qa_chain.invoke(request.query)
     generated_dating_response_dto = DatingGenResponseDto(dating=generated_result['result'])
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"FAISS index initialization took {elapsed_time:.4f} seconds")
     return generated_dating_response_dto
 
 def load_embeddings(model_name):
