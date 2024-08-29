@@ -6,6 +6,11 @@
 ### virtual env##
 .rag_api_venv
 .*_venv
+
+### Indices ###
+*.faiss
+*.pkl
+
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
