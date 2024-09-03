@@ -7,6 +7,6 @@ from ..crud.dating_crud import dating_generation
 
 router = APIRouter()
 
-@router.post("/dating/generate", response_model=DatingGenResponseDto)
+@router.post("/dating/generate", response_model=list[DatingGenResponseDto])
 def dating_generation_router(request: DatingGenRequestDto):
     return dating_generation(request)
