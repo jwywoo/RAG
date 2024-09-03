@@ -17,5 +17,3 @@ COPY .env /code
 
 # http
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
-# https: docker runnning behind the Nginx
-# CMD ["uvicorn", "app.main:app", "--proxy-headers", "--host", "0.0.0.0", "--port", "8080"]

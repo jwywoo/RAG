@@ -1,4 +1,9 @@
 from pydantic import BaseModel
 
+
 class DatingGenResponseDto(BaseModel):
-    dating : str
+    activityTitle: str
+    activityLocation: str
+    timeTotal: str
+    activityDescription: str
+    activityImage: str
