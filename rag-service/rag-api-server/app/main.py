@@ -12,8 +12,9 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Server Init
 app = FastAPI()
 
-# Router 
+# Router
 app.include_router(dating_generation_router.router)
+
 
 @app.get("/")
 def root():

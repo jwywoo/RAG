@@ -10,7 +10,7 @@ def get_rag_chain(template, retrieval_chain, model_name):
     llm = ChatOpenAI(model=model_name, temperature=0)
     final_rag_chain = (
         {"context": retrieval_chain,
-        "question": itemgetter("question")}
+         "question": itemgetter("question")}
         | prompt
         | llm
         | StrOutputParser()

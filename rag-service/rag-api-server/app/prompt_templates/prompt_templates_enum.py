@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class PromptsEnum(Enum):
     query_gen_template = """
         You are an expert planning a date for loved one, family and friends.
@@ -17,7 +18,7 @@ class PromptsEnum(Enum):
         Provide these alternative questions separated by newlines.
         Original question: {question}
     """
-    
+
     answer_gen_template = """
         - You are a helpful assistant that answers questions about the context below.
         - You do not make up answers to questions that cannot be found in the context.

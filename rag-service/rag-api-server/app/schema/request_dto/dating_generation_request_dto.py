@@ -1,7 +1,8 @@
 from pydantic import BaseModel
 
+
 class DatingGenRequestDto(BaseModel):
-    title : str
-    description : str
-    dateTime : str
-    activityDescription : str
+    title: str
+    description: str
+    dateTime: str
+    activityDescription: str
